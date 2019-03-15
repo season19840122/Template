@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>新版 APP 来啦 V2.0.0</title>
-    <link rel="stylesheet" href="styles/app.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
     <header>
@@ -18,8 +20,7 @@
           <div class="menu-wrap">
             <ul>
               <li class="sel"><a href="#">首页</a><i></i></li>
-              <li><a href="#">赛事</a><i></i>
-              </li>
+              <li><a href="#">赛事</a><i></i></li>
               <li><a href="#">直播</a><i></i></li>
               <li><a href="#">火马历程</a><i></i></li>
               <li><a href="#">联系我们</a><i></i></li>
@@ -39,7 +40,12 @@
       </div>
       <div class="wrap_box">
         <div class="wrap">
-          <div class="anchors-wrap"><a class="a1 ti sel" href="###">“老友”升级专享</a><a class="a2 ti" href="###">“新友”首登赠礼</a><a class="a3 ti" href="###">每日签到豪送</a><a class="a4 ti" href="###">App专享赛事</a></div>
+          <div class="anchors-wrap">
+            <a class="a1 ti sel" href="###">“老友”升级专享</a>
+            <a class="a2 ti" href="###">“新友”首登赠礼</a>
+            <a class="a3 ti" href="###">每日签到豪送</a>
+            <a class="a4 ti" href="###">App专享赛事</a>
+          </div>
         </div>
       </div>
     </div>
@@ -61,8 +67,8 @@
         </p>
         <div style="margin:0 auto;">
           <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602005896" style="display:inline-block;text-decoration:none;height:20px;line-height:20px; vertical-align:middle;">
-              <img src="http://static.icafe8.com/wwdsStatic/frontNew/images/ghs.png" style="float:left;">
-              <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">浙公网安备 33010602005896号</p>
+            <img src="http://static.icafe8.com/wwdsStatic/frontNew/images/ghs.png" style="float:left;">
+            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">浙公网安备 33010602005896号</p>
           </a>
           <span style="margin: 0 3px;">|</span>
           <a href="http://jb.ccm.gov.cn/" target="_blank" style="display:inline-block; color: #939393; text-decoration:none; height:20px;line-height:20px; vertical-align:middle;"><span>12318 全国文化市场举报网站</span></a>
@@ -73,24 +79,26 @@
         <script language="javaScript" src="http://zjnet.zjaic.gov.cn/bsjs/330198/33019800001147.js"></script>
       </div>
     </footer>
-    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/jquery.scrollTo.min.js"></script>
-    <script>    (function($) {
-      $("body").on("click", ".anchors-wrap a", function(e) {
-        $(this).addClass("sel").siblings().removeClass("sel");
-      });
-      $("body").on("click", ".a1", function(e) {
-        $.scrollTo($(".bg2"), 600);
-      });
-      $("body").on("click", ".a2", function(e) {
-        $.scrollTo($(".bg3"), 600);
-      });
-      $("body").on("click", ".a3", function(e) {
-        $.scrollTo($(".bg4"), 600);
-      });
-      $("body").on("click", ".a4", function(e) {
-        $.scrollTo($(".bg5"), 600);
-      });
-    })(jQuery)</script>
+    <script>    
+      ;(function($) {
+        $("body").on("click", ".anchors-wrap a", function(e) {
+          $(this).addClass("sel").siblings().removeClass("sel");
+        });
+        $("body").on("click", ".a1", function(e) {
+          $.scrollTo($(".bg2"), 600);
+        });
+        $("body").on("click", ".a2", function(e) {
+          $.scrollTo($(".bg3"), 600);
+        });
+        $("body").on("click", ".a3", function(e) {
+          $.scrollTo($(".bg4"), 600);
+        });
+        $("body").on("click", ".a4", function(e) {
+          $.scrollTo($(".bg5"), 600);
+        });
+      })(jQuery)
+    </script>
   </body>
 </html>
